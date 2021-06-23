@@ -9,9 +9,9 @@
 
 function rangee ($start, $end) {
     $values = range($start, $end);
-    echo $values;
-    // print_r($values);
-    
+    // echo $values;
+    print_r($values);
+    return $values;
 }
 
 rangee(20, 40);
