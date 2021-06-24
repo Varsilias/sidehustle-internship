@@ -7,11 +7,27 @@
  * 
  */
 
-function rangee ($start, $end) {
-    $values = range($start, $end);
-    // echo $values;
-    print_r($values);
-    return $values;
+// function rangee ($start, $end) {
+//     $values = range($start, $end);
+//     // echo $values;
+//     print_r($values);
+//     return $values;
+// }
+
+// rangee(20, 40);
+
+function customRange ($lowest, $highest) {
+    $start = $lowest;
+    $end = $highest;
+    $arr = [];
+    $limit = ($highest - $lowest) + 1;
+    for ($i=0; $i < $limit; $i++) { 
+        array_push($arr, $start);
+        $start++;
+    }
+
+    $newArray = $arr;
+    return $newArray;
 }
 
-rangee(20, 40);
+print_r(customRange(20, 40  ));
