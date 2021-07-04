@@ -1,0 +1,1 @@
+INSERT INTO users (name, email, password, confirm_password) VALUES ('Evidence Chikamdabere', 'evidence@gmail.com', 'password', 'password')

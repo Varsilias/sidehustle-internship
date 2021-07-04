@@ -3,9 +3,15 @@
 /**
  * This function calculates the sum of all the values of an array put together
  * * @param array $values
+ * * @return int  $result
  */
 function sum (array $values) {
-    echo array_sum($values) .'<br/>';
+    $arrLength = count($values);
+    $result = 0;
+    for ($i=0; $i < $arrLength; $i++) { 
+        $result += $values[$i];
+    }
+    return $result;
 }
 
-sum([2, 4, 6, 8, 10]);
+echo(sum([20, 202, 400, 1000]));

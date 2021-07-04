@@ -7,15 +7,6 @@
  * 
  */
 
-// function rangee ($start, $end) {
-//     $values = range($start, $end);
-//     // echo $values;
-//     print_r($values);
-//     return $values;
-// }
-
-// rangee(20, 40);
-
 function customRange ($lowest, $highest) {
     $start = $lowest;
     $end = $highest;
@@ -29,5 +20,21 @@ function customRange ($lowest, $highest) {
     $newArray = $arr;
     return $newArray;
 }
+echo '<pre>';
+print_r(customRange(20, 40));
+echo '<pre>';
 
-print_r(customRange(20, 40  ));
+
+
+
+
+
+
+// function rangee ($start, $end) {
+//     $values = range($start, $end);
+//     // echo $values;
+//     print_r($values);
+//     return $values;
+// }
+
+// rangee(20, 40);
