@@ -14,13 +14,16 @@ class Database {
     {
         try {
 
-            $conn = new PDO("mysql:host={$this->DB_HOST};dbname={$this->DB_NAME}", $this->DB_USERNAME, $this->DB_PASSWORD);
+            $conn = new PDO("mysql:host={$this->DB_HOST};dbname={$this->DB_NAME};charset=UTF8", $this->DB_USERNAME, $this->DB_PASSWORD);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+            if($conn) {
+                 echo "Connected to {$this->DB_NAME} databse successfully";
+
+            }
         } catch (PDOException $e) {
             die("Error connecting to the Database: {$e->getMessage()}");
         }
-        echo 'Connected successfully';
          
     }
 
